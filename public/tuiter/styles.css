@@ -1,0 +1,19 @@
+.wd-page-background {
+  background-color: black;
+}
+
+.wd-borders {
+  border-width: 1px;
+  border-style: solid;
+  color: rgb(47, 51, 54);
+}
+
+.wd-16px-left-offset {
+  margin-left: 16px;
+}
+
+.wd-suggested-post-topic {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+  padding: 2px;
+}
