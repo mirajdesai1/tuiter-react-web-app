@@ -3,6 +3,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBell, faBookmark, faEllipsisH, faEnvelope, faHashtag, faHouse, faListUl, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { Link } from "react-router-dom";
 
 const NavigationSidebar = (
   {
@@ -16,16 +17,16 @@ const NavigationSidebar = (
       <a href="#!" className="list-group-item">
         <FontAwesomeIcon icon="fa-brands fa-twitter" fixedWidth />
       </a>
-      <a href="#!" className={`list-group-item
+      <Link to="/tuiter" className={`list-group-item
                     ${active === 'home' ? 'active' : ''}`}>
         <FontAwesomeIcon icon="fa-solid fa-house" fixedWidth />
         <span className="d-none d-xl-inline">Home</span>
-      </a>
-      <a href="#!" className={`list-group-item
+      </Link>
+      <Link to="/tuiter/explore" className={`list-group-item
                     ${active === 'explore' ? 'active' : ''}`}>
         <FontAwesomeIcon icon="fa-solid fa-hashtag" fixedWidth />
         <span className="d-none d-xl-inline">Explore</span>
-      </a>
+      </Link>
       <a href="#!" className={`list-group-item
                     ${active === 'notifications' ? 'active' : ''}`}>
         <FontAwesomeIcon icon="fa-solid fa-bell" fixedWidth />
