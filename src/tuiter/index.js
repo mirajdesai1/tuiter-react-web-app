@@ -14,6 +14,7 @@ const store = configureStore(
   { reducer: { who: whoReducer, tuitsData: tuitsReducer, nav: navReducer } });
 
 function Tuiter({active = "home"}) {
+  console.log(active)
   const renderComponent = (a) => {
     switch (a) {
       case "home":
