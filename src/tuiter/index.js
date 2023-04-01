@@ -11,7 +11,7 @@ import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 
 const store = configureStore(
-  { reducer: { who: whoReducer, tuits: tuitsReducer, nav: navReducer } });
+  { reducer: { who: whoReducer, tuitsData: tuitsReducer, nav: navReducer } });
 
 function Tuiter({active = "home"}) {
   const renderComponent = (a) => {
