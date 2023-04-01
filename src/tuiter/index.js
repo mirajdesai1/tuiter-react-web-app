@@ -4,7 +4,7 @@ import tuitsReducer from "./tuits/tuits-reducer";
 import navReducer from "./reducers/nav-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from "react-redux";
-import HomeComponent from "./home";
+import HomeComponent from "./homenew";
 import ExploreComponent from "./explore";
 import Nav from "../nav";
 import NavigationSidebar from "./navigation-sidebar";
