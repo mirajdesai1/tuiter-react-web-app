@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { findTuitsThunk } from "../../services/tuits-thunks";
 
 const PostSummaryList = () => {
-  const { tuits } = useSelector(
+  const { tuits, loading } = useSelector(
     state => state.tuitsData)
   const dispatch = useDispatch();
   useEffect(() => {
@@ -14,6 +14,12 @@ const PostSummaryList = () => {
 
   return (
     <ul className="list-group">
+      {
+        loading &&
+        <li className="list-group-item">
+          Loading...
+        </li>
+      }
       {
         tuits.map(post =>
           <PostSummaryItem
